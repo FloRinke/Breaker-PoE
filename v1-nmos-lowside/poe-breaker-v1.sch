@@ -1,0 +1,205 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 60E03744
+P 5000 3450
+F 0 "Q1" H 5204 3496 50  0000 L CNN
+F 1 "IRF520N" H 5204 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5200 3375 50  0001 L CIN
+F 3 "~" H 5000 3450 50  0001 L CNN
+	1    5000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 60E070A2
+P 5100 3800
+F 0 "#PWR07" H 5100 3550 50  0001 C CNN
+F 1 "GND" H 5105 3627 50  0000 C CNN
+F 2 "" H 5100 3800 50  0001 C CNN
+F 3 "" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60E07892
+P 4700 3150
+F 0 "R1" H 4770 3196 50  0000 L CNN
+F 1 "47k" H 4770 3105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4630 3150 50  0001 C CNN
+F 3 "~" H 4700 3150 50  0001 C CNN
+	1    4700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60E07CAC
+P 4700 3650
+F 0 "R2" H 4770 3696 50  0000 L CNN
+F 1 "10k" H 4770 3605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4630 3650 50  0001 C CNN
+F 3 "~" H 4700 3650 50  0001 C CNN
+	1    4700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 60E082FB
+P 4700 3800
+F 0 "#PWR06" H 4700 3550 50  0001 C CNN
+F 1 "GND" H 4705 3627 50  0000 C CNN
+F 2 "" H 4700 3800 50  0001 C CNN
+F 3 "" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3450 4700 3450
+Wire Wire Line
+	4700 3450 4700 3500
+Wire Wire Line
+	4700 3450 4700 3300
+Connection ~ 4700 3450
+Wire Wire Line
+	5100 3650 5100 3800
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 60E0AFBE
+P 2550 2000
+F 0 "#FLG02" H 2550 2075 50  0001 C CNN
+F 1 "PWR_FLAG" V 2550 2127 50  0000 L CNN
+F 2 "" H 2550 2000 50  0001 C CNN
+F 3 "~" H 2550 2000 50  0001 C CNN
+	1    2550 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 60E12263
+P 6300 2150
+F 0 "J2" H 6192 1825 50  0000 C CNN
+F 1 "Out" H 6192 1916 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6300 2150 50  0001 C CNN
+F 3 "~" H 6300 2150 50  0001 C CNN
+	1    6300 2150
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 60E12FFF
+P 2200 1900
+F 0 "J1" H 2172 1924 50  0000 R CNN
+F 1 "Supply" H 2172 1833 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal" H 2200 1900 50  0001 C CNN
+F 3 "~" H 2200 1900 50  0001 C CNN
+	1    2200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 60E1376A
+P 2400 2050
+F 0 "#PWR04" H 2400 1800 50  0001 C CNN
+F 1 "GND" H 2405 1877 50  0000 C CNN
+F 2 "" H 2400 2050 50  0001 C CNN
+F 3 "" H 2400 2050 50  0001 C CNN
+	1    2400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+48V #PWR02
+U 1 1 60E147AC
+P 2550 1800
+F 0 "#PWR02" H 2550 1650 50  0001 C CNN
+F 1 "+48V" H 2565 1973 50  0000 C CNN
+F 2 "" H 2550 1800 50  0001 C CNN
+F 3 "" H 2550 1800 50  0001 C CNN
+	1    2550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2000 2550 2000
+Wire Wire Line
+	2550 1800 2550 1900
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 60E16706
+P 2550 1900
+F 0 "#FLG01" H 2550 1975 50  0001 C CNN
+F 1 "PWR_FLAG" V 2550 2027 50  0000 L CNN
+F 2 "" H 2550 1900 50  0001 C CNN
+F 3 "~" H 2550 1900 50  0001 C CNN
+	1    2550 1900
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 1900
+Wire Wire Line
+	2400 1900 2550 1900
+$Comp
+L power:+48V #PWR03
+U 1 1 60E16B40
+P 6000 1950
+F 0 "#PWR03" H 6000 1800 50  0001 C CNN
+F 1 "+48V" H 6015 2123 50  0000 C CNN
+F 2 "" H 6000 1950 50  0001 C CNN
+F 3 "" H 6000 1950 50  0001 C CNN
+	1    6000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2800 4700 3000
+Wire Wire Line
+	6100 2050 6000 2050
+Wire Wire Line
+	6000 2050 6000 1950
+Text Label 5200 3150 0    50   ~ 0
+GNDout
+Text Label 6100 2150 2    50   ~ 0
+GNDout
+Wire Wire Line
+	5100 3250 5100 3150
+Wire Wire Line
+	5100 3150 5200 3150
+$Comp
+L power:+VSW #PWR05
+U 1 1 60E27FC2
+P 4700 2800
+F 0 "#PWR05" H 4700 2650 50  0001 C CNN
+F 1 "+VSW" H 4715 2973 50  0000 C CNN
+F 2 "" H 4700 2800 50  0001 C CNN
+F 3 "" H 4700 2800 50  0001 C CNN
+	1    4700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VSW #PWR01
+U 1 1 60E283E1
+P 2400 1700
+F 0 "#PWR01" H 2400 1550 50  0001 C CNN
+F 1 "+VSW" H 2415 1873 50  0000 C CNN
+F 2 "" H 2400 1700 50  0001 C CNN
+F 3 "" H 2400 1700 50  0001 C CNN
+	1    2400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1800 2400 1700
+Wire Wire Line
+	2400 2000 2400 2050
+Connection ~ 2400 2000
+$EndSCHEMATC
