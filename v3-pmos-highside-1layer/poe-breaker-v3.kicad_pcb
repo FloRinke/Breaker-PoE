@@ -10,6 +10,16 @@
   )
 
   (page A4)
+  (title_block
+    (title "PoE-Breaker HighSide 1Layer")
+    (date 2021-07-04)
+    (rev 1)
+    (company "Florian Rinke")
+    (comment 1 pcb.florianrinke.de/pcb/breaker-poe-v1)
+    (comment 2 "Attribution-NonCommercial-ShareAlike 4.0 International")
+    (comment 3 http://creativecommons.org/licenses/by-nc-sa/4.0/)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -34,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 1)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -83,7 +93,7 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk true)
-      (outputformat 1)
+      (outputformat 4)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
@@ -784,7 +794,7 @@
   (segment (start 154.051 122.174) (end 154.94 121.285) (width 1) (layer F.Cu) (net 6))
   (segment (start 154.051 124.191) (end 154.051 122.174) (width 1) (layer F.Cu) (net 6))
 
-  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 60E186B3) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 60E3C7A3) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -799,7 +809,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 60E186B0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 60E3C7A0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -945,7 +955,7 @@
       )
     )
   )
-  (zone (net 6) (net_name /Drain) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 6) (net_name /Drain) (layer F.Cu) (tstamp 60E3C79D) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

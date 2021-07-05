@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "PoE-Breaker LowSide 2Layer"
+Date "2021-07-04"
+Rev "1"
+Comp "Florian Rinke"
+Comment1 "pcb.florianrinke.de/pcb/breaker-poe-v1"
+Comment2 "Attribution-NonCommercial-ShareAlike 4.0 International"
+Comment3 "http://creativecommons.org/licenses/by-nc-sa/4.0/"
 Comment4 ""
 $EndDescr
 $Comp

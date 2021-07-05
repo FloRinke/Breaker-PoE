@@ -10,6 +10,16 @@
   )
 
   (page A4)
+  (title_block
+    (title "PoE-Breaker HighSide 2Layer")
+    (date 2021-07-04)
+    (rev 1)
+    (company "Florian Rinke")
+    (comment 1 pcb.florianrinke.de/pcb/breaker-poe-v1)
+    (comment 2 "Attribution-NonCommercial-ShareAlike 4.0 International")
+    (comment 3 http://creativecommons.org/licenses/by-nc-sa/4.0/)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -34,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 1)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -124,6 +134,14 @@
     (fp_text value 1N5404 (at 2.54 5.498) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_circle (center 0 0) (end 2.6 0) (layer F.Fab) (width 0.1))
+    (fp_circle (center 0 0) (end 2.72 0) (layer F.SilkS) (width 0.12))
+    (fp_line (start 0 0) (end 5.08 0) (layer F.Fab) (width 0.1))
+    (fp_line (start 2.72 0) (end 3.18 0) (layer F.SilkS) (width 0.12))
+    (fp_line (start -2.85 -2.85) (end -2.85 2.85) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -2.85 2.85) (end 6.93 2.85) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 6.93 2.85) (end 6.93 -2.85) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 6.93 -2.85) (end -2.85 -2.85) (layer F.CrtYd) (width 0.05))
     (fp_text user A (at 5.08 2.6) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -133,14 +151,6 @@
     (fp_text user %R (at 3.048 -2.159) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_circle (center 0 0) (end 2.6 0) (layer F.Fab) (width 0.1))
-    (fp_circle (center 0 0) (end 2.72 0) (layer F.SilkS) (width 0.12))
-    (fp_line (start 0 0) (end 5.08 0) (layer F.Fab) (width 0.1))
-    (fp_line (start 2.72 0) (end 3.18 0) (layer F.SilkS) (width 0.12))
-    (fp_line (start -2.85 -2.85) (end -2.85 2.85) (layer F.CrtYd) (width 0.05))
-    (fp_line (start -2.85 2.85) (end 6.93 2.85) (layer F.CrtYd) (width 0.05))
-    (fp_line (start 6.93 2.85) (end 6.93 -2.85) (layer F.CrtYd) (width 0.05))
-    (fp_line (start 6.93 -2.85) (end -2.85 -2.85) (layer F.CrtYd) (width 0.05))
     (pad 2 thru_hole oval (at 5.08 0 180) (size 3.2 3.2) (drill 1.6) (layers *.Cu *.Mask)
       (net 1 GND))
     (pad 1 thru_hole rect (at 0 0 180) (size 3.2 3.2) (drill 1.6) (layers *.Cu *.Mask)
